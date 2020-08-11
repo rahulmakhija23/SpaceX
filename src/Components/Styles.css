@@ -1,0 +1,165 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #ccc;
+ }
+ h1,h2,h3,h4,h5,h6,p{
+    padding: 0;
+    margin: 0; 
+ }
+ #page-wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;   
+    background-color: #fff;
+ }
+ 
+ #page-wrapper h1{
+    font-size: 28px;
+ }
+ .filters-content-list{
+    margin-top: 25px;
+ }
+ .filters h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+ }
+ p{
+     text-align: center;
+     font-size: 20px;
+     font-style: italic;
+ }
+ .common-filter-styling h4{   
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    max-width: 200px;
+    margin: auto;
+    font-size: 18px;
+    font-weight: 400;
+ }
+ .common-filter-styling ul {   
+    padding-left: 0;
+    margin-top: 12px;
+    overflow: hidden;
+ }
+ .common-filter-styling ul li {
+    list-style: none;
+    width: 40%;
+    text-align: center;
+    margin-bottom: 10px;
+   
+ }
+ .common-filter-styling ul li label{
+    background: #8BC34A;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 12px;
+    display: block;
+    border-radius: 6px;
+    cursor: pointer;   
+ }
+ .common-filter-styling ul li input[type="radio"]:checked + label {
+    background:#4CAF50;
+ }
+ .common-filter-styling ul li:nth-child(even){
+    float: right;
+ }
+ .common-filter-styling ul li:nth-child(odd){
+    float: left;
+ }
+ .common-filter-styling  ul li input{
+    display: none;
+ }
+ 
+ /* spaceBox */
+ .spaceBox{
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    padding: 2%;
+    margin-bottom: 25px;
+ }
+ .spaceBox figure{
+    background-color: #eee;
+    margin: 0;
+    margin-bottom: 20px;
+ }
+ .spaceBox figure img{
+    max-width: 100%;
+ }
+ .spaceBox h3{
+    font-size: 20px;
+    color: #29347e;
+    font-weight: 600;
+    margin-bottom: 30px;
+ }
+ .spaceBox > ul{
+    padding-left: 0;
+    list-style: none;
+ }
+ .spaceBox ul li{
+    padding-left: 0;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+ }
+ .spaceBox ul li span{   
+    color: #29347e;
+    font-weight: 400;
+ 
+ }
+ .spaceBox ul li .mission_id_list{
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-left: 20px;
+ }
+ .spaceBox ul li .mission_id_list li{
+    font-weight: 500;
+    list-style: disc;
+ }
+ @media (min-width:700px){
+   .filters-content-list{
+      display: flex;
+      margin-top: 50px;
+   }
+   .filters{
+    min-width: 130px;
+    max-width: 130px;
+    margin-right: 20px;
+   }
+   .content-list{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   }
+   .spaceBox{
+    min-width: 25%;
+    max-width: 25%;
+   }
+   .spaceBox ul li{
+      font-size: 16px;
+   }
+ }
+ 
+ @media (min-width:1024px){
+    .filters{
+       min-width: 175px;
+       max-width: 175px;
+    }
+   .spaceBox{
+    min-width: auto;
+    width: 20%;
+   }
+   .spaceBox ul li{
+      font-size: 16px;
+   }
+ }
+ 
+ .developed-by{
+    display: block;
+    text-align: center;
+ }
